@@ -1,0 +1,99 @@
+/* General styles */
+
+/* Colors */
+:root{
+    --col-primary: gold;
+    --col-accent: orangered;
+    --col-highlight: dodgerblue;
+    --col-dark: black;
+    --col-light: ghostwhite;
+}
+
+/* Fonts */
+*{
+    font-family: 'Comfortaa', cursive;
+    font-weight: 300;
+}
+h5{
+    font-weight: 400;
+}
+h1{
+    font-weight: 500;
+}
+
+/* Selecting focusses */
+.clickable{
+    cursor: pointer;
+    background-color: ghostwhite;
+    border: 2px solid cyan;
+    animation: border-pulsate 5s infinite;
+}
+@keyframes border-pulsate {
+    0%   { border-color:  #3abce3; }
+    25%  { border-color: rgba(0, 255, 255, 0); }
+    50%  { border-color: #d762ce; }
+    75%  { border-color: rgba(0, 255, 255, 0); }
+    100% { border-color:#3abce3; }
+}
+
+.completed{
+    text-shadow: 0px 0px 2px black; 
+
+    background: linear-gradient(270deg, #d762ce, #3abce3);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 15s ease infinite;
+    -moz-animation: AnimationName 15s ease infinite;
+    animation: AnimationName 15s ease infinite;
+}
+
+/* Animated glow */
+.unlock-active{
+    -webkit-transition:text-shadow 0.5s ease-in-out;
+    -moz-transition:text-shadow 0.5s ease-in-out;
+    -o-transition:text-shadow 0.5s ease-in-out;
+    -ms-transition:text-shadow 0.5s ease-in-out;
+    transition:text-shadow 0.5s ease-in-out;    
+    text-shadow: 0px 0px 10px gold;   
+ 
+} 
+.unlock-active-animation {
+    text-shadow: 0px 0px 1px gold;   
+}
+
+/* Glassmorphism GUI generated from https://glassmorphism.com/ */
+.glass{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    z-index: 2;
+}
+
+/* BG animation generated with https://www.gradient-animator.com/ */
+.animatedBG {
+    background: linear-gradient(270deg, #d762ce, #3abce3);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 29s ease infinite;
+    -moz-animation: AnimationName 29s ease infinite;
+    animation: AnimationName 29s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
